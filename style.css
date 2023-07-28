@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+}
+
+#game {
+    margin: auto;
+    display: block;
+    width: 600px;
+    height: 600px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: black;
+    background-image: url('./images/background3.png');
+    color: white;
+    font-size: 40px;
+}
+
+#game .screen {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#game .screen.active {
+    display: block;
+}
+
+#menu-page {
+    padding-top: 1em;
+    cursor: pointer;
+    font-size: 0.75em;
+}
+
+#credit-page {
+    padding-top: 1em;
+    font-size: 0.60em;
+    flex-direction: column;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;    text-align: center;
+}
+
+#credit-page li {
+    text-align: start;
+}
+
+#credit-page .menu li {
+    text-align: center;
+}
+
+#pop-up-page {
+        padding-top: 1em;
+        font-family: 'ArcadeClassic', sans-serif;
+        text-align: center;
+
+}
+
+#high-scores {
+    padding-top: 0em;
+    /* margin-top: ; */
+    font-family: 'ArcadeClassic', sans-serif;
+    text-align: center;
+}
+
+#scores-list {
+    width: 50%;
+    margin:auto;
+    background-color: black;
+    border-radius: 15px;
+}
+
+#scores-list li {
+    font-size: .5em;
+}
+
+#game-page canvas {
+    border: solid red;
+    margin: auto;
+}
+
+
+ul.menu {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.menu li {
+    margin: 0.8em 0;
+}
+
+ul.menu li button {
+    font-family: 'ArcadeClassic', sans-serif;
+    font-size: 0.6em;
+    color: white;
+    width: 10em;
+    height: 1.5em;
+    border: none;
+    border-radius: 15px;
+    background: black;
+}
+
+ul.menu li button:hover {
+    background: #222222;
+}
+
+ul.menu li button:active {
+    color: #CECEF6;
+    background: rgb(0, 0, 0);
+}
+
+.image-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+}
+
+#controls-page{
+    font-family: 'ArcadeClassic', sans-serif;
+    text-align: center;
+}
+
+#control-change {
+    display: none;
+}

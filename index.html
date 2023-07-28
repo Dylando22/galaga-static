@@ -1,0 +1,112 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/arcade-classic" rel="stylesheet">
+    <title>Galaga</title>
+</head>
+<body onload = "MyGame.game.initialize();">
+    <div id="game" >
+    <div id="menu-page" class="screen">
+        <div class="image-container">
+        <img src="./images/galagaTitle.png" style="width: 250px; position: relative;">
+        </div>
+        <ul class = "menu">
+            <li><button id = "id-new-game">New&nbsp;Game</button></li>
+            <li><button id = "id-high-scores">High&nbsp;Scores</button></li>
+            <li><button id = "id-controls">Controls</button></li>
+            <li><button id = "id-credits">Credits</button></li>
+        </ul>
+    </div>
+    <div id="game-page" class="screen">
+        <canvas id = "id-canvas" width = "600" height = "600"></canvas>
+    </div>
+    <div id="credit-page" class="screen">
+        <h4>Created By: Dylan Spencer</h4>
+        <h5>Class CS5410</h5>
+        <h5>Audio: </h5>
+        <ul>
+            <li>SgtPepperArc360 - https://freesound.org/people/SgtPepperArc360
+                /packs/19330/</li>
+        </ul>
+        <h5>Images</h5>
+        <ul>
+            <li>Sprites xdonthave1xx at https://www.spriters-resource.com/nes/galaga/sheet/26475/</li>
+            <li>Background - Dylan Spencer</li>
+            <li>Title Image - Wikimedia</li>
+        </ul>
+        <ul class = "menu">
+            <li><button id = "id-credits-back">Back</button></li>
+        </ul>
+    </div>
+    <div id="high-scores" class="screen">
+        <h4>HIGH SCORES:</h4>
+        <p id="no-scores"></p>
+        <ol id="scores-list" >
+
+        </ol>
+
+        <ul class = "menu">
+            <li><button id = "id-high-scores-back">Back</button></li>
+        </ul>
+
+    </div>
+    <div id="controls-page" class="screen">
+        <div id="control-menu">
+            <h3>Change Controls:</h3>
+            <ul class = "menu">
+                <li><button id = "id-controls-fire">Fire</button> <span id="current-fire-control"></span></li>
+                <li><button id = "id-controls-left">Move Left</button> <span id="current-left-control"></span></li>
+                <li><button id = "id-controls-right">Move Right</button> <span id="current-right-control"></span></li>
+                <li><button id = "id-controls-back">Back To Home</button></li>
+            </ul>
+        </div>
+        <div id="control-change">
+            <h3>Change <span id="current-control"></span>:</h3>
+            <h4>Press any key to change control</h4>
+        </div>
+    </div>    
+    <div id="pop-up-page" class="screen" >
+        <h3>Do you wish to quit?</h3>
+        <ul class = "menu">
+            <li><button id = "id-go-home">Quit</button></li>
+            <li><button id = "id-go-game">Cancel</button></li>
+        </ul>
+    </div>
+    <script>
+        let MyGame = {
+            screens : {},
+            input: {},
+            objects: {},
+            render: [],
+            sounds: {},
+            systems: {},
+        };
+    </script>
+    <script src="scripts/objects/Wave.js"></script>
+    <script src="scripts/objects/PlayerBullet.js" ></script>
+    <script src="scripts/objects/EnemyBullet.js" ></script>
+    <script src="scripts/objects/Bee.js"></script>
+    <script src="scripts/objects/Boss.js"></script>
+    <script src="scripts/objects/Butterfly.js"></script>
+    <script src = "scripts/input-keyboard.js"></script>
+    <script src="scripts/render/animation.js"></script>
+    <script src="scripts/render/player.js"></script>
+    <script src = "scripts/render/core.js"></script>
+    <script src = "scripts/render/particle-system.js"></script>
+    <script src = "scripts/systems/particle-system.js"></script>
+    <script src="scripts/audioPlayer/player.js" ></script>
+    <script src = "scripts/game.js"></script>
+    <script src = "scripts/screens/mainmenu.js"></script>
+    <script src = "scripts/gameplay.js"></script>
+    <script src = "scripts/screens/highscores.js"></script>
+    <script src = "scripts/screens/credits.js"></script>
+    <script src = "scripts/popUp.js"></script>
+    <script src="scripts/screens/controls.js"></script>
+
+
+
+</div>
+</body>
+</html>
