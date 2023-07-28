@@ -31,7 +31,7 @@ MyGame.screens['menu-page'] = (function(game) {
         
         document.getElementById('id-goHome').addEventListener(
             'click',
-            function() { window.open('https://dylando22.github.io/my-site') }); 
+            function() { window.open('https://dylando22.github.io/my-site',"_self") }); 
             
         //set up the controls
         let rightMove = window.localStorage.getItem("right");
